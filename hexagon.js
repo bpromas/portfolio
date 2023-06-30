@@ -2,7 +2,8 @@ var colorElements = document.getElementsByClassName('color');
 
 // Hexagon Canvas effect by Matei Copot
 
-var w = c.width = window.innerWidth,
+var c = document.getElementById("c"),
+    w = c.width = window.innerWidth,
     h = c.height = window.innerHeight,
     ctx = c.getContext( '2d' ),
     
@@ -75,7 +76,6 @@ Line.prototype.reset = function(){
   
   this.color = opts.color.replace( 'hue', tick * opts.hueChange );
   this.cumulativeTime = 0;
-  console.log(colorElements);
   colorElements[0].style.color = 'hsl('+tick * opts.hueChange+',100%,50%)';
   colorElements[1].style.color = 'hsl('+tick * opts.hueChange+',100%,50%)';
   
