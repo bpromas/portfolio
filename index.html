@@ -12,7 +12,7 @@
     <section id="hero">
         <canvas id="c"></canvas>
         <div class="heading">
-            <div class="line">Hello, I'm <span class="color">Bruno</span></div>
+            <div class="line">Hello, I'm <span class="color">Romas</span></div>
             <div class="line">I'm a <span class="color">Web Developer</span></div>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         </div>
@@ -20,45 +20,49 @@
     <section id="main">
         <canvas id="bg"></canvas>
         <div id="about">
-            <div id="user-description">
-                <ion-icon id="icon" name="person-circle-outline"></ion-icon>
-                <span id="description">
-                    With a life dedicated to constant growth and learning, and a passion for usability, good design and user experience, I fell in love with web development. The mixture of logic and creativity captivates me, and there's always something to be done on the web, always an unmet need that I would like to help with. As hobbies, I have also tried my hand at video editing and 3D modelling.
-                </span>
-            </div>
-            <div id="competences">
-                <div class="competence-row">
-                    <div class="competence-container">
-                        <img src="img/html.png" alt="html">
-                        <span>HTML</span>
-                    </div>
-                    <div class="competence-container">
-                        <img src="img/mysql.png" alt="mysql">
-                        <span>MySQL</span>
-                    </div>
+
+            <h1 class="title">About</h1>
+            <div class="about-content">
+                <div id="user-description">
+                    <ion-icon id="icon" name="person-circle-outline"></ion-icon>
+                    <span id="description">
+                        With a life dedicated to constant growth and learning, and a passion for usability, good design and user experience, I fell in love with web development. The mixture of logic and creativity captivates me, and there's always something to be done on the web, always an unmet need that I would like to help with. As hobbies, I have also tried my hand at video editing and 3D modelling.
+                    </span>
                 </div>
-                <div class="competence-row">
-                    <div class="competence-container">
-                        <img src="img/css.png" alt="css">
-                        <span>CSS</span>
+                <div id="competences">
+                    <div class="competence-row">
+                        <div class="competence-container">
+                            <img src="img/html.png" alt="html">
+                            <span>HTML</span>
+                        </div>
+                        <div class="competence-container">
+                            <img src="img/mysql.png" alt="mysql">
+                            <span>MySQL</span>
+                        </div>
                     </div>
-                    <div class="competence-container">
-                        <img src="img/bootstrap.svg" alt="bootstrap">
-                        <span>Bootstrap</span>
+                    <div class="competence-row">
+                        <div class="competence-container">
+                            <img src="img/css.png" alt="css">
+                            <span>CSS</span>
+                        </div>
+                        <div class="competence-container">
+                            <img src="img/bootstrap.svg" alt="bootstrap">
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="competence-container">
+                            <img src="img/git.png" alt="git">
+                            <span>Git</span>
+                        </div>
                     </div>
-                    <div class="competence-container">
-                        <img src="img/git.png" alt="git">
-                        <span>Git</span>
-                    </div>
-                </div>
-                <div class="competence-row">
-                    <div class="competence-container">
-                        <img src="img/js_square.png" alt="js">
-                        <span>Javascript</span>
-                    </div>
-                    <div class="competence-container">
-                        <img src="img/ruby-on-rails.png" alt="ruby-on-rails">
-                        <span>Ruby on Rails</span>
+                    <div class="competence-row">
+                        <div class="competence-container">
+                            <img src="img/js_square.png" alt="js">
+                            <span>Javascript</span>
+                        </div>
+                        <div class="competence-container">
+                            <img src="img/ruby-on-rails.png" alt="ruby-on-rails">
+                            <span>Ruby on Rails</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,37 +70,45 @@
     </section>
     <section id="projects">
         <h1 class="title">Projects</h1>
-        <div class="project-list">
-            <div class="projects-left">
+        <div class="projects-container">
+            <div class="project-list left">
                 <div class="project">
-                    <h3 class="project-name">Janken</h3>
                     <div class="project-image"><a href="https://bpromas.github.io/janken/"><img src="img/janken.png" alt="janken"></a></div>
-                    <span>A more skill-based version of rock paper scissors that takes to account the player's reaction time.</span>
-                    <a href="https://bpromas.github.io/janken/">Live app</a>
-                    <a href="https://bpromas.github.io/janken/">Repository</a>
+                    <div class="info-panel">
+                        <h3 class="project-name">Janken</h3>
+                        <span class="project-description">A more skill-based version of rock paper scissors that takes to account the player's reaction time.</span>
+                        <a href="https://bpromas.github.io/janken/">Live app</a>
+                        <a href="https://bpromas.github.io/janken/">Repository</a>
+                    </div>
                 </div>
                 <div class="project">
-                    <h3 class="project-name">Mastermind</h3>
                     <div class="project-image"><a href="https://replit.com/@BrunoRomaszkiew/mastermind"><img src="img/mastermind.png" alt="mastermind"></a></div>
-                    <span>A recreation of the classic Mastermind codebreaking game, including an algorithm that solves any code you choose. Made with Ruby.</span>
-                    <a href="https://replit.com/@BrunoRomaszkiew/mastermind">Live app</a>
-                    <a href="https://github.com/bpromas/mastermind">Repository</a>
+                    <div class="info-panel">
+                        <h3 class="project-name">Mastermind</h3>
+                        <span class="project-description">A recreation of the classic Mastermind codebreaking game, including an algorithm that solves any code you choose. Made with Ruby.</span>
+                        <a href="https://replit.com/@BrunoRomaszkiew/mastermind">Live app</a>
+                        <a href="https://github.com/bpromas/mastermind">Repository</a>
+                    </div>
                 </div>
             </div>
-            <div class="projects-right">
+            <div class="project-list right">
                 <div class="project">
-                    <h3 class="project-name">Calculator</h3>
+                    <div class="info-panel">
+                        <h3 class="project-name">Calculator</h3>
+                        <span class="project-description">A functioning calculator app, made with HTML, CSS and Javascript.</span>
+                        <a href="https://bpromas.github.io/calculator/">Live app</a>
+                        <a href="https://github.com/bpromas/calculator">Repository</a>
+                    </div>
                     <div class="project-image"><a href="https://bpromas.github.io/calculator/"><img src="img/calculator.png" alt="calculator"></a></div>
-                    <span>A functioning calculator app, made with HTML, CSS and Javascript.</span>
-                    <a href="https://bpromas.github.io/calculator/">Live app</a>
-                    <a href="https://github.com/bpromas/calculator">Repository</a>
                 </div>
                 <div class="project">
-                    <h3 class="project-name">Hangman</h3>
+                    <div class="info-panel">
+                        <h3 class="project-name">Hangman</h3>
+                        <span class="project-description">A recreation of Hangman made in Ruby.</span>
+                        <a href="https://replit.com/@BrunoRomaszkiew/hangman">Live app</a>
+                        <a href="https://github.com/bpromas/hangman">Repository</a>
+                    </div>
                     <div class="project-image"><a href="https://replit.com/@BrunoRomaszkiew/hangman"><img src="img/hangman.png" alt="hangman"></a></div>
-                    <span>A recreation of Hangman made in Ruby.</span>
-                    <a href="https://replit.com/@BrunoRomaszkiew/hangman">Live app</a>
-                    <a href="https://github.com/bpromas/hangman">Repository</a>
                 </div>
             </div>
         </div>

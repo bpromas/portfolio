@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     font-family: montserrat, sans-serif;
     background: black;
     color: white;
@@ -14,6 +14,23 @@ html {
 section {
     width:100%;
     scroll-snap-align: start;
+}
+
+.title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.title::before{
+    display: block;
+    content: '';
+    border-bottom: 18px solid #FF1A2B;
+    position: relative;
+    left: 2.8rem;
+    top: 3.2rem;
+    width: 80%;
+    z-index: -1;
 }
 
 #hero{
@@ -39,10 +56,15 @@ section {
 #about{
     height:100vh;
     width:100%;
-    margin: 10% 10% 0 10%;
+    padding: 5% 10% 0 10%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 50px;
+    align-items: center;
+}
+
+.about-content{
+    display: flex;
 }
 
 #user-description{
@@ -50,13 +72,16 @@ section {
     flex-direction: column;
     align-items: center;
     width: 50%;
+    flex: 1;
 }
 
 #icon {
     color: white;
     font-size: 256px;
-    margin-top: 10%;
+    padding-top: 10%;
+    filter: drop-shadow( 3px 3px 0 #FF4D5A);
 }
+
 
 #description {
     color: white;
@@ -71,6 +96,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex: 1;
 }
 
 .competence-row{
@@ -86,7 +112,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid white;
+    border: 2px solid #FF4D5A;
     border-radius: 10px;
     height: 100px;
     width: 150px;
@@ -111,61 +137,104 @@ section {
 }
 
 #projects{
-    height: 100vh;    
-}
-
-h1{
-    text-align: center;
-    font-size: 3rem;
-}
-
-.project-list {
-    display: flex;
-    flex-grow: 1;
-}
-
-.projects-left .project{
-    margin: 0 5% 0 5%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    padding-top: 5%;
 }
 
-.projects-right .project{
-    margin: 0 5% 0 5%;
+.projects-container {
+    display: flex;
+    gap: 12px;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.project-list { 
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    flex: 1; 
+    gap: 10%;
 }
 
-.project-image img{
-    height: 30vh;
+.project-list.right{
+    justify-content: flex-end;
 }
 
 .project-name {
     font-size: 2rem;
+    font-weight: bold;
 }
+
+.project {
+    display: flex;
+    align-items: center;
+    line-height: 1.3;
+    gap:15px;
+}
+
+.project > * { flex: 1; }
+
+.project-image img {
+    height: 30vh;
+}
+
+.info-panel{
+    position: relative;
+    background-color: #FF4D5A;
+    padding: 0 15px 15px 5px;
+}
+
+.info-panel a{
+    display: block;
+}
+
 
 #contact{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 form{
     display: flex;
     flex-direction: column;
+    gap: 6px;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
     width: 500px;
 }
 
-input, textarea{
-    width: 100%;
+#contact input, #contact textarea {
+    width: 500px;
+    resize: none;
+    border: none;
+    color: inherit;
+    background-color: #282828;
+    padding: 1rem;
+    font-family: monserrat, sans-serif;
+    border-left: 2px solid transparent;
+    border-radius: 0;
 }
 
-textarea{
-    height: 100px;
+#contact textarea {
+    height: 12rem;
 }
+
+button {
+    background-color: #FF1A2B;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+button:hover {
+    background-color: #FF4D5A;
+  }
