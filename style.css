@@ -56,7 +56,7 @@ section {
 #about{
     height:100vh;
     width:100%;
-    padding: 5% 10% 0 10%;
+    padding: 0 10% 0 10%;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -137,11 +137,13 @@ section {
 }
 
 #projects{
-    height: 90vh;
+    height: 100vh;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5%;
+    padding: 0 10% 0 10%;
+    gap: 8px;
 }
 
 .projects-container {
@@ -149,6 +151,7 @@ section {
     gap: 12px;
     height: 100%;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 
 .project-list { 
@@ -165,6 +168,11 @@ section {
 .project-name {
     font-size: 2rem;
     font-weight: bold;
+}
+
+
+.left .project-image{
+    text-align: right;
 }
 
 .project {
