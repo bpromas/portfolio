@@ -162,7 +162,7 @@ section {
 }
 
 .project-list.right{
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .project-name {
@@ -185,7 +185,7 @@ section {
 .project > * { flex: 1; }
 
 .project-image img {
-    height: 30vh;
+    max-width: 300px;
 }
 
 .info-panel{
